@@ -1,0 +1,857 @@
+body {
+    background-color: #fafafa;
+}
+
+.main {
+    width: 880px;
+    padding: 20px;
+    margin: 0 auto;
+    height: 100%;
+    clear: both;
+    overflow: hidden;
+    line-height: 80px;
+}
+
+.button-container {
+    width:200px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    border-collapse: collapse;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* =============== Berlin =============== */
+
+.berlin {
+    background: linear-gradient(to bottom, #f5f5f5 0%, #ededed 100%);
+    padding: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.175);
+    cursor: pointer;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #787878;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.berlin:hover {
+    background: #0ba360;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.225);
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 2px 0 #2980B9;
+}
+
+button.berlin:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+
+
+/* =============== London =============== */
+
+.london {
+    background-color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #444444;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+
+    transition: all 0.25s ease-in-out 0s;
+}
+
+.london:hover {
+    background-color: #d6481a;
+    box-shadow: 0px 15px 20px rgba(180, 35, 25, 0.4);
+    color: #fafafa;
+
+    transform: translateY(-4px);
+}
+
+.london:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+
+
+/* =============== Belostok =============== */
+
+.belostok {
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    padding: 10px 25px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 0px #cecece;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #808080;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px #ffffff;
+}
+
+.belostok:hover {
+    background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
+    background-color: #f6f6f6;
+    color: #666666;
+}
+
+.belostok:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+/* =============== Carlsbad =============== */
+
+.carlsbad {
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px #9bc7eb;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 11pt;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.carlsbad:hover {
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    box-shadow: 2px 2px 7px #9bc7eb;
+}
+
+.carlsbad:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+
+
+/* =============== Bristol =============== */
+
+.bristol {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, #c7c7c7, #828282);
+    padding: 10px 25px;
+    border: none;
+    box-shadow: 2px 2px 7px #ccc;
+    cursor: pointer;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+
+    transition: all 0.3s ease-out;
+}
+
+.bristol:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #eeeeee;
+    transition: all 0.3s ease-out;
+}
+
+.bristol:hover {
+    box-shadow: 2px 2px 10px #cccccc;
+    border: 1px solid #cccccc;
+    color: #666666;
+}
+
+.bristol:hover:after {
+    right: 0;
+    height: 100%;
+}
+
+.bristol:active {
+    top: 1px;
+}
+
+
+
+/* =============== Bristol2 =============== */
+
+.bristol2 {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, #d60050, #ff009f);
+    padding: 15px 25px;
+    border: none;
+    box-shadow: 2px 2px 7px #ccc;
+    cursor: pointer;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease-out;
+}
+.bristol2:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, #ff009f, #ff146c);
+    transition: all 0.3s ease-out;
+}
+.bristol2:hover {
+
+    box-shadow: 2px 2px 10px #ccc;
+
+    transition: border 0.4s ease-in-out;
+}
+
+.bristol2:hover:after {
+    right:0;
+    width: 100%;
+}
+
+.bristol2:active {
+    top: 1px;
+}
+
+
+
+/* =============== Rotterdam =============== */
+
+.rotterdam {
+    position: relative;
+    z-index: 1;
+    background: #4568DC;
+    padding: 1em 1.32em;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #fff;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.rotterdam:hover {
+    background: transparent;
+    color: #4568DC;
+    border: 2px solid #4568DC;
+}
+
+.rotterdam:before,
+.rotterdam:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    z-index: -1;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.rotterdam:before {
+    top: 0;
+}
+
+.rotterdam:after {
+    bottom: 0;
+}
+
+.rotterdam:hover:before,
+.rotterdam:hover:after {
+    height: 0;
+    background-color: #4568DC;
+}
+
+.rotterdam:active {
+    top: 1px;
+    left: 1px;
+}
+
+
+
+/* =============== Marcelle =============== */
+
+.marcelle {
+    position: relative;
+    background: #0ba360;
+    padding: 1em 1.32em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #fff;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.marcelle:hover {
+    background: #00ba68;
+    color: #fafafa;
+}
+
+.marcelle:before,
+.marcelle:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #4eed9b;
+    transition: all 0.3s ease-in;
+}
+
+.marcelle:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.marcelle:hover:before,
+.marcelle:hover:after{
+    width:100%;
+    transition: all 750ms ease-in-out;
+}
+
+.marcelle:active {
+    left: 1px;
+}
+
+
+
+/* =============== Reykjavik =============== */
+
+.reykjavik {
+    position: relative;
+    width: 140px;
+    height: 40px;
+    background: none;
+    padding: 0!important;
+    text-align: center;
+    border: 3px solid royalblue;
+    cursor: pointer;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    color: royalblue;
+    line-height: 34px; /*height - 2 x borderWidth*/
+
+    transition: all 0.3s ease;
+}
+
+.reykjavik:hover{
+/* supplementary :hover styles */
+}
+
+.reykjavik span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.reykjavik:before,
+.reykjavik:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: royalblue;
+    transition: all 0.3s ease;
+}
+
+.reykjavik:before {
+    height: 0;
+    width: 1px;
+}
+
+.reykjavik:after {
+    width: 0;
+    height: 1px;
+}
+
+.reykjavik:hover:before {
+    height: 100%;
+}
+
+.reykjavik:hover:after {
+    width: 100%;
+}
+
+.reykjavik span:before,
+.reykjavik span:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: royalblue;
+    transition: all 0.3s ease;
+}
+.reykjavik span:before {
+    width: 1px;
+    height: 0;
+}
+
+.reykjavik span:after {
+    width: 0;
+    height: 1px;
+}
+
+.reykjavik span:hover:before {
+    height: 100%;
+}
+
+.reykjavik span:hover:after {
+    width: 100%;
+}
+
+.reykjavik:active {
+    top:1px;
+}
+
+
+/* =============== Kaliningrad =============== */
+
+.kaliningrad {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    background-size: 250% 100%;
+    padding: 1em 1.32em;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 7px 18px 0 rgba(35, 175, 100, 0.7);
+    text-align:center;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+
+    transition: all 0.5s ease-in;
+}
+
+.kaliningrad:hover {
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.kaliningrad:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+/* =============== Athens =============== */
+
+.athens {
+    position: relative;
+    background-image: linear-gradient(to bottom, #e6e6e6, #fafafa);
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #dddddd;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    color: #444444;
+    font-weight: bold;
+}
+
+.athens i {
+    opacity: 0;
+    font-size: 12pt;
+    position: absolute;
+    top: 0.5em;
+    right: 0.25em;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.athens i:after {
+    content: "➜";
+    position: relative;
+}
+
+.athens div {
+    transition: transform 0.5s ease-in-out;
+}
+
+.athens:hover div {
+    transform: translateX(-0.5em);
+}
+
+.athens:hover i {
+    opacity: 1;
+    transform: translateX(-0.5em);
+}
+
+.athens:active {
+    top: 1px;
+}
+
+
+
+/* =============== Beograd =============== */
+
+.beograd {
+    position: relative;
+    background: #eeeeee;
+    padding: 0.8em;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #e3e3e3;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+    font-weight: 900;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px #fafafa;
+
+    transition: all 0.5s cubic-bezier(0.7, -0.9, 0.2, 3);
+}
+
+.beograd:hover, .beograd:focus, .beograd:active {
+    letter-spacing: 0.17em;
+}
+
+.beograd:active {
+    top: 1px;
+}
+
+
+
+/* =============== Oslo =============== */
+
+.oslo {
+    position: relative;
+    background: #a8072d;
+    padding: 0.75em 2em;
+    border: none;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #ffffff;
+}
+
+.oslo:hover{
+    background: #b30930;
+}
+
+.oslo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e84a6e;
+    z-index: -1;
+    transition: all 0.3s ease;
+
+}
+
+.oslo:hover::after {
+    top: -0.33em;
+    left: -0.33em;
+    width: calc(100% + 0.33em * 2);
+    height: calc(100% + 0.33em * 2);
+}
+
+.oslo:active {
+    top: 1px;
+}
+
+
+
+/* =============== Stockholm =============== */
+
+.stockholm {
+    position: relative;
+    background-color: #00ba68;
+    padding: 1em 3em;
+    border: none;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 11pt;
+    color: #ffffff;
+}
+
+.stockholm:hover {
+    background-image: linear-gradient(to bottom, #00c76f, #00de7c);
+}
+
+.stockholm::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    z-index: -1;
+
+    transition: all 0.3s ease;
+}
+
+.stockholm::after {
+    width: 80%;
+    height: 80%;
+}
+
+.stockholm:hover::after {
+    width: 100%;
+    height: 100%;
+    top: 0.75em;
+    left: 0.75em;
+}
+
+.stockholm:active {
+    top: 1px;
+    left: 1px;
+}
+
+
+
+/* =============== Leipzig =============== */
+
+.leipzig {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+}
+
+.leipzig:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.leipzig:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(146, 148, 248, 0.4),
+            transparent
+    );
+    transition: all 650ms;
+}
+
+.leipzig:hover:before {
+    left: 100%;
+}
+
+
+
+/* =============== Geneve =============== */
+
+.geneve {
+    position: relative;
+    background: #0049a3;
+    padding: 1em;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.geneve::after {
+    content: "➜";
+    position: absolute;
+    left: 75%;
+    top: 30%;
+    opacity: 0;
+}
+
+.geneve:hover {
+    background: #0063de;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #0000ff61;
+    padding: 1em 3em 1em 1em;
+}
+
+.geneve:hover::after {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.geneve:active {
+    top: 1px;
+}
+
+
+
+/* =============== Minsk =============== */
+
+.minsk {
+    position: relative;
+    background: #f5f5f5;
+    padding: 1em 2.32em;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 1), 6px 6px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    letter-spacing: 0.01em;
+    color: #295fcc;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.minsk:hover {
+    opacity: 0.75;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.minsk:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.35), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #3679ff;
+    top: 2px;
+}
+
+
+
+/* =============== Tokyo =============== */
+
+.tokyo {
+
+    background-image: linear-gradient(45deg, #4568DC, #B06AB3);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 22px 44px rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    transform: translate(0);
+
+}
+.tokyo span {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #4568DC, #B06AB3);
+}
+.tokyo:after {
+    content: "";
+    border-radius: 2px;
+    position: absolute;
+    margin: 0.2em;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #fcfcfc;
+}
+.tokyo:hover {
+    background-image: linear-gradient(-45deg, #4568DC, #B06AB3);
+    box-shadow: 5px 10px 15px rgba(210, 192, 210, 0.6);
+}
+.tokyo:hover span {
+    background-image: linear-gradient(-45deg, #4568DC, #B06AB3);
+}
+
+.tokyo:active {
+    transform: translateY(-1px);
+}
+
+
+
+/* =============== Moscow =============== */
+
+.moscow {
+    position: relative;
+    background-color: #3091d1;
+    padding: 10px 30px;
+    border: none;
+    border-bottom: 5px solid #2779b0;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0px -2px #2779b0;
+
+    transition: all 0.1s ease;
+}
+
+.moscow:active {
+    transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}

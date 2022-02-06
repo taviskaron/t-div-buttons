@@ -855,3 +855,101 @@ button.berlin:active {
     transform: translate(0px,5px);
     border-bottom: 1px solid;
 }
+
+
+
+/* =============== Cardiff =============== */
+
+.cardiff {
+    position: relative;
+    background-color: #ffffff;
+    border: 3px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    height: 50px;
+    width: auto;
+    min-width: 140px;
+    text-align: left;
+
+    transition: all 0.15s ease-in-out;
+
+}
+
+.cardiff span {
+    display: inline-block;
+    position: relative;
+}
+
+.cardiff span:after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 0;
+    border-top: 2px solid black;
+    top: 8px;
+    right: -25px;
+
+}
+
+.cardiff:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    left: 3px;
+    top: 3px;
+    border: 3px solid black;
+    opacity: 0;
+
+}
+
+.cardiff:after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    position: relative;
+    right: -16px;
+    top: -1px;
+
+}
+
+.cardiff:hover {
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: -3px 3px 9px #cecece;
+
+}
+
+.cardiff:hover:after {
+    right: -70px;
+
+}
+
+.cardiff:hover:before {
+    opacity: 1;
+
+}
+
+.cardiff:hover span:after {
+    width: 62px;
+    right: -79px;
+
+}
+
+.cardiff:active {
+    top: 1px;
+}
